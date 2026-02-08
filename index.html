@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="effects"></div>
+
+<div class="container">
+
+  <!-- PAGE 1 -->
+  <div class="page active">
+    <img src="page1.gif" class="gif" alt="page 1 gif">
+    <h1>hey! can i ask you something?</h1>
+    <button class="nav-btn right" onclick="nextPage()">what ?</button>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <img src="page2.gif" class="gif" alt="page 2 gif">
+    <h1>Will you be my Valentine? 💖</h1>
+    <p class="hint">P.S. The No button is very shy 🙈</p>
+
+    <div class="center-buttons">
+      <button class="yes-btn" onclick="nextPage()">Yes 💕</button>
+      <button class="no-btn" onmouseover="moveNo()">No 😅</button>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" class="gif">
+    <h1>Yay!!! I knew you would say yes 💖</h1>
+    <p>You just made my day 🥰</p>
+    <div class="arrow right" onclick="nextPage()">>></div>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    <div class="emoji">🥰</div>
+    <h1>So… you really chose me 💕</h1>
+    <p>
+      I don’t know how you said yes so easily,<br>
+      but I know one thing —<br>
+      I’ll spend every day proving<br>
+      that you made the right choice 🥰
+    </p>
+    <div class="hearts">💖 💕 💘 ❤️</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

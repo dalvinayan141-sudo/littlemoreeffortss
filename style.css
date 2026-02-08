@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(180deg, #fff0f3, #ffffff);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  display: none;
+  padding-top: 40px;
+}
+
+.page.active {
+  display: block;
+}
+
+h1 {
+  color: #ff4d6d;
+  font-size: 28px;
+  margin: 10px 20px;
+}
+
+p {
+  color: #ff758f;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.hint {
+  font-size: 16px;
+}
+
+.gif {
+  width: 80%;
+  max-width: 260px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+/* Page 1 button */
+.nav-btn {
+  position: fixed;
+  bottom: 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-btn.right {
+  right: 70px;
+}
+
+/* Page 2 buttons */
+.center-buttons {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 24px;
+}
+
+.yes-btn {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.no-btn {
+  background: #ccc;
+  color: #333;
+  border: none;
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+/* Arrow */
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  font-size: 34px;
+  color: #ff4d6d;
+  cursor: pointer;
+  animation: bounce 1.2s infinite;
+  z-index: 10;
+}
+
+.arrow.right {
+  right: 70px;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Effects */
+#effects {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.effect {
+  position: absolute;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  from { transform: translateY(-10vh); }
+  to { transform: translateY(110vh); }
+}
+
+.emoji {
+  font-size: 60px;
+}
+
+.hearts {
+  font-size: 30px;
+}
